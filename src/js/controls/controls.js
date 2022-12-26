@@ -59,7 +59,7 @@ roles.route('/role')
           message: 'Error on server. Try later!',
         });
       }
-      res.status(200).send({ data: result });
+      res.status(200).send(`Added new role — ${name}`);
     });
   })
   .put((req, res) => {
